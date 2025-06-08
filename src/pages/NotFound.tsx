@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function NotFound() {
   return (
     <>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex mt-16 flex-col min-h-screen overflow-hidden">
         <Header />
         <main className="mx-auto flex flex-1 items-center justify-center p-4">
           <Card className="w-full max-w-md text-center">
