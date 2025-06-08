@@ -1,4 +1,4 @@
-import { HomeIcon, HamburgerMenuIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
+import { HomeIcon, HamburgerMenuIcon, PaperPlaneIcon, ArrowLeftIcon, LayersIcon } from "@radix-ui/react-icons";
 
 export const Icons = {
   logo: () => (
@@ -20,4 +20,6 @@ export const Icons = {
   menu: HamburgerMenuIcon,
   home: HomeIcon,
   paperPlane: PaperPlaneIcon,
+  arrowLeft: ArrowLeftIcon,
+  layers: LayersIcon,
 };
