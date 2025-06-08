@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { Post } from "@/types";
 import { Link } from "react-router-dom";
 import { posts } from "@/data/posts";
 import { Icons } from "@/components/icons";
@@ -35,14 +34,14 @@ function BlogDetails() {
                 </span>
               </div>
               <img
-                src={post.image}
+                src={post.images[0].path}
                 alt={post.title}
                 className="w-full rounded-xl mb-4"
               />
               <TextRenderer content={post.body} className="my-8" />
               <div className="mb-12 space-x-2">
                 {post.tags.map((tag) => (
-                  <Button variant={"secondary"}>{tag}</Button>
+                  <Button key={tag.name} variant={"secondary"}>{tag.name}</Button>
                 ))}
               </div>
             </>
@@ -63,7 +62,7 @@ function BlogDetails() {
                 className="mb-6 flex items-start gap-3"
               >
                 <img
-                  src={post.image}
+                  src={post.images[0].path}
                   alt="Blog Post"
                   className="w-1/4 rounded"
                 />

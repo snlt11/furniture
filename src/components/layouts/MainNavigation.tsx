@@ -22,7 +22,7 @@ export default function MainNavigation({ items }: MainNavigationProps) {
   return (
     <div className="hidden gap-6 lg:flex">
       <Link to="/" className="flex items-center space-x-2">
-        <Icons.logo className="size-7" aria-hidden="true" />
+        <Icons.logo className="size-7" aria-hidden={true} />
         <span className="inline-block font-bold">{siteConfig.name}</span>
         <span className="sr-only">Home</span>
       </Link>
@@ -39,7 +39,7 @@ export default function MainNavigation({ items }: MainNavigationProps) {
                         className="from-muted/50 to-muted flex size-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
                         to="/"
                       >
-                        <Icons.logo className="size-6" aria-hidden="true" />
+                        <Icons.logo className="size-6" aria-hidden={true} />
                         <div className="mt-4 mb-2 text-lg font-medium">
                           {siteConfig.name}
                         </div>

@@ -37,7 +37,7 @@ export function CarouselCard({ products }: productsProps) {
           >
             <div className="flex p-4 lg:px-4 gap-3">
               <img
-                src={product.images[0].toString()}
+                src={product.images[0].path}
                 alt={product.name}
                 className="size-28 rounded-md"
               />

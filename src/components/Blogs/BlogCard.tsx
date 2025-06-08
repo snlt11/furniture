@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { Post } from "@/types";
+
 interface BlogCardProps {
   posts: Post[];
 }
@@ -11,7 +11,7 @@ function BlogCard({ posts }: BlogCardProps) {
       {posts.map((post) => (
         <Link to={`/blogs/${post.id}`} key={post.id}>
           <img
-            src={post.image}
+            src={post.images[0].path}
             alt={post.title}
             className="w-full rounded-2xl mb-4"
           />
@@ -19,9 +19,12 @@ function BlogCard({ posts }: BlogCardProps) {
           <div className="ml-4 mt-2 text-sm">
             <span>
               By
-              <span className="font-semibold mx-1">{post.author}</span>
-              On
-              <span className="font-semibold mx-1">{post.updated_at}</span>
+              <span className="text-gray-600 font-semibold">
+                {post.author}
+              </span>
+              <span className="text-gray-600 font-semibold">
+                {post.updated_at}
+              </span>
             </span>
           </div>
         </Link>

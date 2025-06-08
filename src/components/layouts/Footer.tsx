@@ -10,7 +10,7 @@ function Footer() {
         <section className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-20">
           <section>
             <Link to="/" className="flex items-center space-x-2">
-              <Icons.logo className="size-6" aria-hidden="true" />
+              <Icons.logo className="size-6" aria-hidden={true} />
               <span className="font-bold">{siteConfig.name}</span>
               <span className="sr-only">Home</span>
             </Link>
