@@ -1,4 +1,4 @@
-import { HomeIcon, HamburgerMenuIcon, PaperPlaneIcon, ArrowLeftIcon, LayersIcon } from "@radix-ui/react-icons";
+import { HomeIcon, HamburgerMenuIcon, PaperPlaneIcon, ArrowLeftIcon, LayersIcon, PlusIcon } from "@radix-ui/react-icons";
 
 interface IconProps {
   className?: string;
@@ -28,4 +28,5 @@ export const Icons = {
   paperPlane: PaperPlaneIcon,
   arrowLeft: ArrowLeftIcon,
   layers: LayersIcon,
+  plus: PlusIcon,
 };

@@ -38,7 +38,7 @@ export const products = [
     discount: 0,
     rating: 4,
     inventory: 180,
-    status: "active",
+    status: "sold",
   },
   {
     id: "uuid2",

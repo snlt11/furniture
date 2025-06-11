@@ -5,6 +5,7 @@ import { CarouselCard } from "@/components/Products/CarouselCard";
 import { products } from "@/data/products";
 import { posts } from "@/data/posts";
 import BlogCard from "@/components/Blogs/BlogCard";
+import ProductCard from "@/components/Products/ProductCard";
 
 function Home() {
   const Title = ({
@@ -53,6 +54,8 @@ function Home() {
         <img src={Couch} alt="Couch" />
       </div>
       <CarouselCard products={products} />
+      <Title title="Feature Products" href="/products" sideText="View All Products" />
+      <ProductCard products={products} />
       <Title title="Recently Blog" href="/blog" sideText="View All Posts" />
       <BlogCard posts={posts} />
     </div>
