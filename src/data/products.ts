@@ -9,16 +9,16 @@ import p8 from "@/data/images/p-8.webp";
 
 export const filterList = {
   types: [
-    { id: "uuid1", label: "seating" },
-    { id: "uuid2", label: "lying" },
-    { id: "uuid3", label: "entertainment" },
-    { id: "uuid4", label: "tables" },
-    { id: "uuid5", label: "storage" },
+    { id: "type1", name: "seating" },
+    { id: "type2", name: "lying" },
+    { id: "type3", name: "entertainment" },
+    { id: "type4", name: "tables" },
+    { id: "type5", name: "storage" },
   ],
   categories: [
-    { id: "uuid1", label: "Wooden" },
-    { id: "uuid2", label: "Bamboo" },
-    { id: "uuid3", label: "Metal" },
+    { id: "uuid1", name: "Wooden" },
+    { id: "uuid2", name: "Bamboo" },
+    { id: "uuid3", name: "Metal" },
   ],
 };
 
@@ -34,6 +34,7 @@ export const products = [
       { id: "img3", path: p7 },
     ],
     categoryId: "uuid1",
+    typeId: "type1", // seating
     price: 230,
     discount: 0,
     rating: 4,
@@ -51,6 +52,7 @@ export const products = [
       { id: "img6", path: p8 },
     ],
     categoryId: "uuid2",
+    typeId: "type1", // seating
     price: 180.85,
     discount: 200,
     rating: 3.5,
@@ -68,6 +70,7 @@ export const products = [
       { id: "img9", path: p6 },
     ],
     categoryId: "uuid1",
+    typeId: "type1", // seating
     price: 90,
     discount: 110,
     rating: 4,
@@ -85,6 +88,7 @@ export const products = [
       { id: "img12", path: p7 },
     ],
     categoryId: "uuid3",
+    typeId: "type4", // tables
     price: 1500,
     discount: 0,
     rating: 4,
@@ -102,6 +106,7 @@ export const products = [
       { id: "img15", path: p8 },
     ],
     categoryId: "uuid1",
+    typeId: "type1", // seating
     price: 230,
     discount: 0,
     rating: 4,
@@ -119,6 +124,7 @@ export const products = [
       { id: "img18", path: p4 },
     ],
     categoryId: "uuid1",
+    typeId: "type1", // seating
     price: 140,
     discount: 150,
     rating: 3,
@@ -136,6 +142,7 @@ export const products = [
       { id: "img21", path: p3 },
     ],
     categoryId: "uuid3",
+    typeId: "type5", // storage
     price: 210,
     discount: 0,
     rating: 4,
@@ -153,6 +160,7 @@ export const products = [
       { id: "img24", path: p2 },
     ],
     categoryId: "uuid2",
+    typeId: "type2", // lying
     price: 140,
     discount: 150,
     rating: 3,
@@ -170,6 +178,7 @@ export const products = [
       { id: "img27", path: p8 },
     ],
     categoryId: "uuid1",
+    typeId: "type3", // entertainment
     price: 250,
     discount: 260,
     rating: 4,

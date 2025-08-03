@@ -22,6 +22,7 @@ export type Product = {
   description: string;
   images: Image[];
   categoryId: string;
+  typeId: string;
   price: number;
   discount: number;
   rating: number;
